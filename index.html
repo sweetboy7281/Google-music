@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Music Player</title>
+  
+</head>
+<body>
+
+<style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #f0f0f0;
+      }
+
+      h1 {
+          color: #333;
+      }
+
+      #music-player {
+          width: 100%;
+          max-width: 400px;
+          margin: 20px auto;
+          display: block;
+      }
+
+      ul#playlist {
+          list-style: none;
+          padding: 0;
+      }
+
+      ul#playlist li {
+          margin: 10px;
+      }
+
+      ul#playlist li a {
+          text-decoration: none;
+          color: #333;
+          display: block;
+          padding: 5px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+
+      ul#playlist li a:hover {
+          background-color: #ddd;
+      }
+
+      /* Style the audio controls */
+      audio::-webkit-media-controls-panel {
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+  </style>
+
+
+
+    <h1>Mini Music Player</h1>
+    <audio id="music-player" controls>
+        <!-- Replace with Google Drive shareable link URLs -->
+        <source src="https://drive.google.com/uc?export=download&id=16TudaUTFgSxOxcBXHFfVvkB4lgl5m_jV" type="audio/mpeg">
+    </audio>
+
+
+
+
+
+
+    <ul id="playlist">
+        <!-- Replace with Google Drive shareable link URLs -->
+        <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESODFNZjZVUDd2N2s">   Song 1   </a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=16Q09YC32PsKcJWh1_Yn7M_IUe_hROtOT">  Song 2  </a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESb3M4akNyYmczQWc">   Song 3  </a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESTGdBVU55c2tGNUk">   Song 4  </a></li>
+         <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESMUh5VUxOVEt1Rk0">  Song 5  </a></li>
+         <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESRnZuUUJjcnAybDQ">  Song 6   </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESazJ1eVRCQjVIV3M">  Song 7  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESWWdLM05qNU0ycFU">  Song 8   </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESN25JQVRXZjcxOUU">   Song 9  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESZUFteThqMXNNREU">  Song 10  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESS1FRTlNHcDA2ODQ">  Song 11  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESbEk0SHI5X1pBNUk">   Song 12  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESUF8xTzdXYzd5SGc">  Song 13   </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESOUJMWWVZUmh3Ykk">  Song 14   </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESQ0IyR0NtWjlCNDQ">  Song 15  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESQ0IyR0NtWjlCNDQ">  Song 16 </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESdEtBaGVGSUIxNEE">  Song 17  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESNjctVlR3eHI0TVU">   Song 18  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESSXhWaXphUmhtMTQ">    Song 19   </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgEScVJFMHFZOWJ0MlU">  Song 20  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESNWQxUlJyUTIzMUE">   Song 21  </a></li>
+         <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESdWg3bzM0NC1MOFU">     Song 22  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESOXY1bmVsNzhsRWM">    Song 23   </a></li>
+         <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESUy1QQklwR2xMVFk">     Song 24  </a></li>
+         <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESUTRCSkhoaVFYc1U">   song 25</a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESelpxRnZCTmQ1a2c">  Song 26   </a></li>
+           <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESWkFPUnEyb18xVWM">  Song 27  </a></li>
+           <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESejQ5Nnd3NXJWcG8">  Song 28 </a></li>
+           <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESNjhJQk1VejIzUFU">    Song 29   </a></li>
+           <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESb2dlZUdLSmp5X2M">   Song 30   </a></li>
+           <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESOGs0U21ueDItZ0U">  Song 31   </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESdDc0RWNWcEk5TDQ">   Song 32  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESdDc0RWNWcEk5TDQ">   Song 33  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESUkdqanhDYmNPVGs">   Song 34  </a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESTFo2TzJ2SF9lUDQ">    Song 35  </a></li>
+           <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESWTliUFBZQk9WZW8">    Song 36  </a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESTUV3NHZTbzNzTGs">   Song 37   </a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESVVduNzVaOC1wTTA">   Song 38  </a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=0B36CxQCzEgESR2Z5Yi1lX0c0MUE">   Song 39   </a></li>
+             <li><a href="https://drive.google.com/uc?export=download&id=">Song 3</a></li>
+             <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+             <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+             <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+             <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+             <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Song 3</a></li>
+                                      
+        
+        
+        
+    </ul>
+
+
+
+
+
+
+
+    <script>
+        const musicPlayer = document.getElementById('music-player');
+        const playlist = document.getElementById('playlist');
+        const playlistItems = playlist.getElementsByTagName('li');
+
+        // Add click event listeners to playlist items
+        for (let i = 0; i < playlistItems.length; i++) {
+            const item = playlistItems[i];
+            item.addEventListener('click', function (event) {
+                event.preventDefault();
+                const songSource = this.querySelector('a').getAttribute('href');
+                musicPlayer.src = songSource;
+                musicPlayer.play();
+            });
+        }
+    </script>
+</body>
+</html>
