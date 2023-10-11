@@ -136,10 +136,21 @@
 
 
 
-    <script>
+      <script>
         const musicPlayer = document.getElementById('music-player');
         const playlist = document.getElementById('playlist');
         const playlistItems = playlist.getElementsByTagName('li');
+        let currentIndex = 0;
+
+        // Function to play the next song
+        function playNextSong() {
+            currentIndex++;
+            if (currentIndex < playlistItems.length) {
+                const songSource = playlistItems[currentIndex].querySelector('a').getAttribute('href');
+                musicPlayer.src = songSource;
+                musicPlayer.play();
+            }
+        }
 
         // Add click event listeners to playlist items
         for (let i = 0; i < playlistItems.length; i++) {
@@ -149,8 +160,12 @@
                 const songSource = this.querySelector('a').getAttribute('href');
                 musicPlayer.src = songSource;
                 musicPlayer.play();
+                currentIndex = i; // Update the current index
             });
         }
-    </script>
+
+        // Event listener to play the next song when the current one ends
+        musicPlayer.addEventListener('ended', playNextSong);
+      </script>
 </body>
 </html>
